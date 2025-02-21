@@ -1,0 +1,187 @@
+body {
+    /* Mengatur font utama halaman ke Arial, Helvetica, atau sans-serif */
+    /* Memberikan warna latar belakang biru */
+    /* Menghapus margin default pada seluruh halaman */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3153ff;
+    margin: 0;
+}
+
+header {
+    /* Membuat elemen header menjadi blok (default) */
+    /* Memusatkan header secara horizontal */
+    /* Mengatur lebar header ke 50% dari halaman */
+    /* Memberikan padding atas sebesar 50px */
+    /* Memberikan warna teks putih */
+    /* Menengahkan teks dalam header */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+.profileimg {
+    /* Mengatur lebar gambar profil menjadi 40% dari elemen induknya */
+    /* Membuat gambar profil berbentuk lingkaran dengan border-radius */
+    /* Memberikan warna latar belakang kuning */
+    width: 40%;
+    border-radius: 50%;
+    background-color: #f0e853;
+}
+
+main {
+    /* Membuat elemen main menjadi blok */
+    /* Memusatkan elemen secara horizontal */
+    /* Mengatur lebar elemen menjadi 50% dari halaman */
+    /* Memberikan padding atas sebesar 50px */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 25px;
+}
+
+
+a {
+    /* Mengatur warna tautan menjadi putih */
+    /* Menghapus garis bawah pada tautan */
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    /* Menggunakan flexbox untuk meratakan isi tombol secara horizontal */
+    /* Memusatkan isi tombol secara vertikal dan horizontal */
+    /* Menambahkan jarak antar-elemen dalam tombol sebesar 10px */
+    /* Mengatur warna latar belakang tombol menjadi kuning */
+    /* Mengatur warna teks tombol menjadi hitam */
+    /* Memberikan padding agar tombol lebih nyaman diklik */
+    /* Memberikan margin atas dan bawah sebesar 8px, kiri dan kanan 10px */
+    /* Menghapus border tombol */
+    /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+    /* Mengatur lebar tombol agar memenuhi seluruh elemen induk */
+    /* Membuat sudut tombol membulat */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    background-color: #f0e853;
+    color: #0c0c0c;
+    padding: 14px 20px;
+    margin: 8px auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+button img {
+    /* Mengatur lebar gambar dalam tombol menjadi 50px */
+    /* Membuat gambar berbentuk lingkaran */
+    width: 50px;
+    border-radius: 50%;
+}
+
+button h3 {
+    /* Menghapus margin dan padding bawaan elemen h3 */
+    /* Mengatur ukuran font h3 dalam tombol menjadi 30px */
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+footer {
+    /* Mengatur posisi footer menjadi relatif */
+    /* Memberikan margin atas sebesar 20% */
+    /* Memberikan warna latar belakang kuning */
+    /* Mengatur warna teks menjadi hitam */
+    /* Menengahkan teks dalam footer */
+    /* Memberikan padding agar konten tidak terlalu rapat */
+    position: relative;
+    margin-top: 10%;
+    background-color: #f0e853;
+    color: #0c0c0c;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-penjelasan{
+    /* Memberikan margin atas dan bawah sebesar 10px */
+    position: relative;
+    margin-top: 50px;
+    background-color: #f0e853;
+    color: #0c0c0c;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* ini untuk respnsive web design */
+@media screen and (max-width: 600px) {
+    body {
+        /* Mengatur lebar body agar menyesuaikan layar perangkat kecil */
+        width: 100%;
+    }
+
+    .profileimg {
+        /* Mengatur ukuran gambar profil menjadi lebih besar (80% dari elemen induknya) */
+        width: 80%;
+    }
+
+    footer {
+        /* Memberikan margin atas lebih besar agar tidak terlalu dekat dengan konten */
+        /* Menjaga posisi footer tetap relatif */
+        margin-top: 40%;
+        position: relative;
+    }
+
+    header {
+        /* Memusatkan header */
+        /* Mengatur lebar menjadi 80% agar lebih sesuai dengan layar kecil */
+        /* Mengurangi padding atas menjadi 20px */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    main {
+        /* Memusatkan elemen */
+        /* Mengatur lebar menjadi 80% agar lebih responsif */
+        /* Mengurangi padding atas menjadi 20px */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    button h3 {
+        /* Mengurangi ukuran font judul dalam tombol menjadi 20px */
+        font-size: 20px;
+    }
+
+    button img {
+        /* Mengurangi ukuran gambar dalam tombol menjadi 30px */
+        width: 30px;
+    }
+
+    button {
+        /* Mengurangi padding tombol agar lebih sesuai di layar kecil */
+        padding: 10px 15px;
+    }
+
+    button {
+        /* Mengurangi margin tombol agar tidak terlalu renggang */
+        margin: 5px 0;
+    }
+
+    button {
+        /* Memastikan tombol mengisi seluruh lebar induknya */
+        width: 100%;
+    }
+}
